@@ -12,10 +12,7 @@ RUN chown musicbot:musicbot /app/JMusicBot.jar
 
 COPY ./docker-entrypoint.sh /app
 
-RUN chmod +x /app/docker-entrypoint.sh
-
-RUN chown musicbot:musicbot /app/docker-entrypoint.sh
-
+RUN chmod +x /app/docker-entrypoint.sh && chown musicbot:musicbot /app/docker-entrypoint.sh
 
 VOLUME /config
 
