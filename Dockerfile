@@ -16,6 +16,8 @@ RUN chmod +x /app/docker-entrypoint.sh && chown musicbot:musicbot /app/docker-en
 
 VOLUME /config
 
-USER musicbot
+VOLUME /settings
+
+RUN apt-get update && apt-get install -y --no-install-recommends gosu
 
 ENTRYPOINT ["/app/docker-entrypoint.sh"]

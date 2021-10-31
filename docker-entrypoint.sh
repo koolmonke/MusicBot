@@ -1,5 +1,9 @@
 #!/bin/sh
 
-cd /config
+cd /settings
 
-java -jar -Dconfig="/config/config.txt" -Dnogui=true /app/JMusicBot.jar
+touch serversettings.json
+
+chown musicbot:musicbot serversettings.json
+
+gosu musicbot:musicbot java -jar -Dconfig="/config/config.txt" -Dnogui=true /app/JMusicBot.jar
