@@ -1,4 +1,4 @@
-FROM openjdk:17-slim
+FROM eclipse-temurin:11
 
 RUN groupadd -g 2000 musicbot && useradd -ms /bin/bash -u 2001 -g musicbot musicbot
 
