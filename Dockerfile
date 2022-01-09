@@ -2,8 +2,6 @@ FROM eclipse-temurin:11
 
 RUN groupadd -g 2000 musicbot && useradd -ms /bin/bash -u 2001 -g musicbot musicbot
 
-VOLUME /config
-
 VOLUME /settings
 
 RUN apt-get update && apt-get install -y --no-install-recommends gosu
