@@ -1,6 +1,6 @@
 # MusicBot
 Docker(-compose)  deployment for JMusicBot
-You can put your config file in /config folder
+You can put your config file in /settings folder
 You can find more about JMusicBot config file here https://jmusicbot.com/config/
 
 
