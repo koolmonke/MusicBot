@@ -2,7 +2,7 @@ version: "2"
 
 services:
   jmusicbot:
-    build: .
+    image: ghcr.io/koolmonkey/musicbot:master
     restart: unless-stopped
     volumes:
       - ./settings/:/settings/
