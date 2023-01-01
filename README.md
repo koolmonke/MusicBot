@@ -1,7 +1,7 @@
 # MusicBot
 [![Docker](https://github.com/koolmonkey/MusicBot/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/koolmonkey/MusicBot/actions/workflows/docker-publish.yml)
 
-Docker(-compose)  deployment for JMusicBot
+Docker(-compose) deployment for JMusicBot
 You can put your config file in /settings folder
 
 You can find more about JMusicBot config file here https://jmusicbot.com/config/
