@@ -12,7 +12,7 @@ COPY ./docker-entrypoint.sh /app
 
 RUN chmod +x /app/docker-entrypoint.sh && chown musicbot:musicbot /app/docker-entrypoint.sh
 
-ENV JMB_VERSION 0.3.8
+ENV JMB_VERSION 0.3.9
 
 ADD https://github.com/jagrosh/MusicBot/releases/download/$JMB_VERSION/JMusicBot-$JMB_VERSION.jar /app/JMusicBot.jar
 
